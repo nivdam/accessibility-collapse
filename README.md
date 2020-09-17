@@ -1,4 +1,4 @@
-# accessibility-collapse
+# accessibility bootstrap 4 collapse element
 Example of bootstrap accessibility accordion
 
 
