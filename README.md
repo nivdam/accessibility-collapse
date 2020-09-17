@@ -3,7 +3,8 @@ Example of bootstrap accessibility accordion
 
 The below example section contains divided into 2 panels that demonstrates the design pattern for accordion. 
 
-Live example: ### [Demo](https://codepen.io/Bizo_dam/pen/KKzxMEq)
+Live example:
+### [Demo](https://codepen.io/Bizo_dam/pen/KKzxMEq)
 
 ----
 The W3c Example
