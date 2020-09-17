@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Bootstrap 4 - Accordion</title>
+</head>
+
+<!-- STYLE CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.min.css">
+
+<body>
+  <div class="wrapper">  
+    <!-- Acordion  -->
+    <div class="comp-accordion">
+      <div class="information__accordion js-information" id="informationAccordion">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="mb-0">
+              <!-- NOTE: For change the arrow position toggle class .collapsed ( for collapsed add class .collapsed | for expanded remove class .collapsed ) -->
+              <button type="button" class="btn" data-toggle="collapse" data-target="#collapse-details"
+                aria-expanded="true" aria-controls="collapse-details" title="Lorem Ipsum">
+                <span class="js-information_tooltip" data-toggle="tooltip" data-placement="bottom">Lorem Ipsum</span>
+              </button>
+            </h5>
+          </div>
+  
+          <!-- NOTE: For show the collapses content add class .show -->
+          <div class="collapse show" id="collapse-details">
+            <div class="card-body">
+              <div class="donation--content">
+                <b class="d-block">Lorem ipsum dolor sit amet:</b>
+                Eum id clita dolore, pri vidisse appareat postulant an. Est at nobis conclusionemque
+              </div>
+  
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th scope="row">audire</th>
+                    <td>suavitate interpretaris et sea</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Lorem ipsum</th>
+                    <td><a href="#"> in sit nulla mandamus</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Eum </th>
+                    <td><a href="#"> duo sumo nullam doctus et</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Elit</th>
+                    <td><a href="#">ca. 1940-1945</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Libris apeirian</th>
+                    <td>Tvix altera definiebas an, ut amet singulis vim. Tale discere et vix, eos ne erant latine
+                      lucilius. Te mel mentitum salutatus</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">falli</th>
+                    <td>Niv Dam</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Capeirian</th>
+                    <td><a href="#"> Ut sed iudicabit deterruisset</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-header">
+            <h5 class="mb-0">
+              <!-- NOTE: For change the arrow position toggle class .collapsed ( for collapsed add class .collapsed | for expanded remove class .collapsed ) -->
+              <button type="button" class="btn js-information_tooltip collapsed" data-toggle="collapse"
+                data-target="#accessRights-collapse" aria-expanded="false" aria-controls="accessRights-collapse"
+                title="At errem omnes">
+                <span class="js-information_tooltip" data-toggle="tooltip" data-placement="bottom">At errem
+                  omnes</span></button>
+            </h5>
+          </div>
+          <!-- NOTE: For show the collapses content add class .show -->
+          <div class="collapse" id="accessRights-collapse">
+            <div class="card-body">
+              <p class="mb-3"> <b>Esse invenire dissentias ad his:</b> </p>
+  
+              <div class="box__blue--border">
+                <p>Ne ignota quodsi copiosae usu</p>
+              </div>
+  
+              <p class="mb-3"> <b>Dolor sit amet:</b> </p>
+  
+              <div class="box__blue--border">
+                <p>Lorem ipsum dolor sit amet, duo ex dicit elaboraret repudiandae, graeco tibique vis eu? In per fabulas
+                  alienum, autem atqui definitiones est ut. Ut minimum adipisci dissentiet ius, phaedrum quaestio antiopam
+                  ex sit. Ullum postea conclusionemque ex his, eu nam autem voluptua. Id nam wisi eligend</p>
+                <p>
+                  Lorem ipsum dolor sit amet, in vel tation platonem. Qui ex veri debitis voluptaria, diam aperiam in nec,
+                  sed te probatus corrumpit. Ludus ornatus cum at, te admodum invenire pri. Oratio equidem offendit eu
+                  vis, sed modus elaboraret ex.</p>
+                <p> Lorem ipsum dolor sit amet, ex populo vidisse feugiat mel, <br> eos eius vocibus no. An sea sanctus
+                  oportere, melius omnium eum at. Possim labitur principes et eum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="assets/js/main.js"></script>
+</html>

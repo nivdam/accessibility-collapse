@@ -1,0 +1,213 @@
+@import 'config/mixins';
+@import 'config/colors';
+@import 'config/breakpoints';
+@import 'config/variables';
+
+
+
+// Global
+
+.wrapper {
+  display: flex;
+  max-width: rem(800);
+  min-height: 100vh;
+  padding: rem(25) rem(15);
+  justify-content: center;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+
+// Accordion
+.comp-accordion {
+  width: 100%;
+  a {
+    color: $blue;
+    text-decoration: underline;
+
+    &:hover, &:focus {
+      color: $blue_hover;
+    }
+  }
+
+  .information__accordion {
+    .card {
+      border-radius: 4px;
+      margin-bottom: 20px;
+
+      p {
+        margin-bottom: 0;
+
+        + p {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+
+    .card-header {
+      padding: 0;
+      border-radius: 0;
+
+      .btn {
+        position: relative;
+        width: 100%;
+        text-align: inherit;
+        justify-content: flex-start;
+        font-size: 22px; 
+        padding-top:    9px;
+        padding-bottom: 9px;
+        padding-right: 55px;
+        background-color: $bg_gray;
+        border: none;
+
+
+        &::after {
+          position: absolute;
+          content: "";
+          top: 0;
+          right: 16px;
+          width: 22px;
+          height: 100%;
+          background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="24" height="15"> <path fill="rgb(0, 127, 173)" fill-rule="evenodd" d="M12-.001l12 11.797-3.259 3.203L12 6.406l-8.741 8.593L0 11.796 12-.001z"/> </svg>');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 100% auto;
+          transition: transform 0.3s ease;
+          height: 26px;
+          top: 27%;          
+        }
+
+        &.collapsed {
+          &:after {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+
+
+
+
+    .card-header .btn, .card-body {
+      @include media-breakpoint-down(sm) {
+        padding-left:  15px;
+        padding-right: 15px;
+      }
+
+      @include media-breakpoint-up(md) {
+        padding-left:  30px;
+        padding-right: 30px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding-left:  25px;
+        padding-right: 25px;
+      }
+    }
+
+
+
+
+    .card-body {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background-color: $bg_card_gray;
+
+      @include media-breakpoint-down(sm) {
+        padding-left:  15px;
+        padding-right: 15px;
+      }
+
+      @include media-breakpoint-up(md) {
+        padding-left:  30px;
+        padding-right: 30px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding-left:  25px;
+        padding-right: 25px;
+      }
+    }
+  }
+
+
+  .donation--content {
+    padding-top: 6px;
+    padding-bottom: 8px;
+    background-color: $white;
+    border-top:    1px solid $hr;
+    border-bottom: 1px solid $hr;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 8px;
+    }
+  
+    @include media-breakpoint-up(lg) {
+      padding: 10px 15px 13px ;
+      margin-bottom: 30px;
+    }
+  }
+
+
+  .table {
+    margin-bottom: 0;
+    
+    @include media-breakpoint-up(md) {
+      max-width: 720px;
+    }
+
+    th, td {
+      border: 0;
+      padding: 10px 0;
+      word-break: break-word;
+
+      @include media-breakpoint-down(sm) {
+        display: block;
+        padding: 0;
+      }
+    }
+
+    th {
+      color: #444444;
+      @extend %fnt-semi;
+
+      @include media-breakpoint-down(sm) {
+        padding-top: 20px;
+      }
+
+      @include media-breakpoint-up(md) {
+        width: 30%;
+        padding-right: 15px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding-right: 55px;
+      }
+    }
+  }
+
+
+  .box__blue--border {
+    padding: 18px 30px 23px;
+    border-radius: 3px;
+    background-color: $white;
+    box-shadow: 
+    4px 0 0 0 $blue inset,
+    0 3px 7px 0 rgba(0, 0, 0, 0.1);
+
+    margin-bottom: 20px;
+
+    @include media-breakpoint-down(md) {
+      padding: 11px 15px 15px;
+    }
+
+    + {
+      p, h2, h3, h4, h5, h6, div:not(.box__blue--border) {
+        padding-top: 1rem;
+      }
+    }
+  }
+}
+
+
